@@ -9,7 +9,7 @@ import transactions from 'transactions.json';
 
 export const App = () => {
   return (
-    <div>
+    <div style={{ display: 'flex', gap: 16 }}>
       <ProfileCard item={user} />
       <StatisticCard items={data} />
       <FriendList items={friends} />
