@@ -28,7 +28,7 @@ export const List = styled.ul`
 export const Item = styled.li`
   border: 1px solid white;
   padding: 20px;
-  background-color: random;
+  background-color: gray;
   color: white;
   display: flex;
   flex-direction: column;
