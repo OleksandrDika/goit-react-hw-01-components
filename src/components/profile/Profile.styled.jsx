@@ -8,6 +8,7 @@ export const Box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 `;
 
 export const Box2 = styled.div`
@@ -18,7 +19,7 @@ export const Box2 = styled.div`
   align-items: center;
   flex-direction: column;
   padding-top: 15px;
-  height: 100%;
+  height: auto;
 `;
 
 export const Pic = styled.img`
