@@ -9,14 +9,14 @@ import {
   Title,
 } from './Statistic.styled';
 
-export const StatisticCard = ({ items }) => {
+export const StatisticCard = ({ title, stats }) => {
   return (
     <Stat class="statistics">
       <Conteiner>
-        <Title class="title">UPLOAD STATS</Title>
+        {title && <Title class="title">{title}</Title>}
 
         <List class="stat-list">
-          {items.map(item => (
+          {stats.map(item => (
             <Item class="item" key={item.id}>
               <Label class="label">{item.label}</Label>
               <Perc class="percentage">{item.percentage}%</Perc>
@@ -29,7 +29,7 @@ export const StatisticCard = ({ items }) => {
 };
 
 StatisticCard.propTypes = {
-  items: PropTypes.arrayOf(
+  stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,

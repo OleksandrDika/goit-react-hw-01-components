@@ -11,9 +11,15 @@ import { Layout } from './Layout.styled';
 export const App = () => {
   return (
     <Layout>
-      <ProfileCard item={user} />
-      <StatisticCard items={data} />
-      <FriendList items={friends} />
+      <ProfileCard
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <StatisticCard title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
       <TransactionTable items={transactions} />
     </Layout>
   );
